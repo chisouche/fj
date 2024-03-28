@@ -1,0 +1,618 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F7770E;
+    height: 100vh; 
+}
+
+
+.section_one{
+    height:816px;
+    background: #A10702; 
+    box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+}
+
+.spacer_10{
+    padding: 10px;
+}
+
+
+.food_region{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10px;
+    transition:  .4s ease-in;
+    width: auto;
+    height: auto;
+}
+
+.disc{
+    font-family: "Roboto", sans-serif;
+    margin: 20px;
+}
+
+.meal_cat{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.space{
+    padding-left: 40px;
+}
+
+.m-1{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-1{
+    font-family:"Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.color_1{
+    background-color: #DDC1C1;
+}
+
+.color_2{
+    background-color: #D79694;
+}
+
+.color_3{
+background-color: #C56562;
+}
+
+.color_4{
+background-color:#AA4946 ;
+}
+
+.color_5{
+background-color: #8D4745 ;
+}
+
+.color_6{
+background-color: #601D1B;
+}
+
+.image_one{
+    display: flex;
+    background: url(../../assets/images/Ellipse\ 10.svg);  
+    background-size: cover;
+    width: 80%;
+    height: 90%;
+    margin-left: 22px;
+}
+
+.image_two{
+    display: flex;
+    background: url(../../assets/images/afang.svg);  
+    background-size: cover;
+    width: 90%;
+    height: 90%;
+    margin-left: 12px;
+    border-radius: 50%;
+    
+}
+
+
+.image_three{
+    display: flex;
+    background: url(../../assets/images/food_3.svg);  
+    background-size: cover;
+    width: 90%;
+    height: 90%;
+    margin-left: 12px;
+}
+
+.image_four{
+    display: flex;
+    background: url(../../assets/images/food_5.svg);  
+    background-size: cover;
+    width: 90%;
+    height: 90%;
+    margin-left: 12px;
+    border-radius: 50%;
+    margin-bottom: -20px;
+}
+
+.image_five{
+    display: flex;
+    background: url(../../assets/images/snack_1.svg);  
+    background-size: cover;
+    width: 80%;
+    height: 90%;
+    margin-left: 22px;
+}
+
+.image_six{
+    display: flex;
+    background: url(../../assets/images/drinks_1.svg);  
+    background-size: cover;
+    width: 80%;
+    height: 90%;
+    margin-left: 23px;
+}
+
+.section_three{
+    position: flex;
+    width: 100%;
+    height: 303px;
+    padding: 30px;
+    background: #F5F5F5;
+    border-width: 0px 4px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+
+    .b{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .square_size{
+        width: 260px;
+        height: 260px;
+    }
+    .space_24{
+        padding: 20px;
+    }
+
+    .download_app_delivery{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-style: solid;
+        border-color: rgba(182, 94, 69, 0.33);
+        background-image: url(../../assets/images/food_delivery_.jpeg);
+        background-size: cover;
+        background-position: center; /* Center the background image */
+        background-repeat: no-repeat;
+    }
+
+    .download_app_delivery h4{
+        margin-top: 100px;
+        background-color: #aa49468f;
+        color: #F5F5F5;
+    }
+
+
+
+    .download-btns
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 2px;
+            margin-top: 8px;
+        }
+
+        .google_play,.app_store{
+            display: flex;
+            align-items: center;
+            width: 118px;
+            background: #000000;
+            color: #FFFFFF;
+            border-radius: 12px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .btns_a{
+            text-decoration: none;
+        }
+
+        .tog{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .get-it-on{
+            font-size: 9px;
+            font-weight: 100;
+            font-family:sans-serif;
+        }
+
+        .google-play-span{
+            font-size: 12px;
+            font-weight: 100;
+            font-family:sans-serif;
+        }
+
+        .Download-on{
+            font-size: 8px;
+            font-weight: 100;
+            font-family:sans-serif;
+        }
+        
+        .app_store{
+            margin-left: 10px;
+        }
+        
+        .app-store-span{
+            font-size: 12px;
+            font-weight: 100;
+            font-family:sans-serif;
+        }
+        
+        .join_us{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 45px;
+            background-image: url(../../assets/images/join\ us.svg);
+            background-size: cover;
+            background-position: center; 
+            background-repeat: no-repeat;
+            background-color: #8D4745;
+        }
+
+        .join_us h4{
+            background-color: #aa49468f;
+            color: #F5F5F5;
+            font-size: 14px;
+            margin-top: 100px;
+        }
+
+        .join_us_btn{
+            background-color: #000;
+            color: #F5F5F5;
+            width: 100px;
+            height: 40px;
+            margin-left: 12px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        .earn_rider{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 45px;
+            background-image: url(../../assets/images/earn.svg);
+            background-size: cover;
+            background-position: center; 
+            background-repeat: no-repeat;
+            background-color: #8D4745;
+        }
+        .earn_rider button{
+            margin-top: 70px;
+        }
+
+        .earn_rider h4{
+            background-color: #aa49468f;
+            color: #F5F5F5;
+            font-size: 14px;
+            margin-top: 100px;
+        }
+
+       
+        
+
+        .lunch_break{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 45px;
+            background-image: url(../../assets/images/enjoy_lunch.svg);
+            background-size: cover;
+            background-position: center; 
+            background-repeat: no-repeat;
+            background-color: #8D4745;
+        }
+
+        .lunch_break h4{
+            background-color: #aa49468f;
+            color: #F5F5F5;
+            font-size: 14px;
+            margin-top: 100px;
+        }
+
+
+        .gift_cards{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 45px;
+            background-image: url(../../assets/images/giftcards.svg);
+            background-position: center; 
+            background-repeat: no-repeat;
+            background-color: #8D4745;
+        }
+
+        .gift_cards  h4{
+            background-color: #aa49468f;
+            color: #F5F5F5;
+            font-size: 14px;
+            margin-top: 100px;
+        }
+
+        .section_four{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: auto;
+            background-color: #8D4745;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 20px;
+        }
+
+        .section_four span{
+            color: #fff;
+        }
+
+        .footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .footer ul{
+            text-decoration: none;
+            list-style: none;
+            font-size: 20px;
+
+        }
+
+
+        .box_one{
+            width: 300px;
+            background: #8D4745;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+            height: 100%;
+            margin:40px;
+        }
+        .box_one li{
+            margin-right: 30px;
+        }
+
+        .box_2{
+            width: 300px;
+            background: #8D4745;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+            height: 100%;
+            margin:40px;
+        }
+
+        .box_3{
+            width: 300px;
+            background: #8D4745;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+            height: 100%;
+            margin:40px;
+        }
+
+        .box_3 li{
+            margin-right: 30px;
+        }
+        
+        
+        
+
+
+
+
+
+    @media screen and (max-width: 1600px) {
+    .Eastern,
+    .Southern,
+    .Nothern,
+    .Western,
+    .Snack,
+    .Drinks {
+        width:100%;
+        padding: 10px;
+    }
+
+    .m-1 {
+        width: 210px;
+        height: 210px;
+    }
+    .f-1{
+        font-size: 16px;
+    }
+    .square_size{
+        width: 160px;
+        height: 160px;
+    }
+
+    .download-btns
+        {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .google_play,.app_store{
+            width: 70px;
+            color: #FFFFFF;
+        }
+        .get-it-on{
+            font-size: 8px;
+        }
+
+        .google-play-span{
+            font-size: 8px;
+        }
+
+        .Download-on{
+            font-size: 8px;
+        }
+        
+        .app_store{
+            margin-left: 10px;
+        }
+        
+        .app-store-span{
+            font-size: 8px;
+        }
+
+        .svg-icon{
+            width: 20px;
+        }
+
+        .join_us h4{
+            position:static;
+            font-size: 12px;
+            margin-top: 0;
+        }
+
+        .join_us_btn{
+            position: relative;
+            width: 80px;
+            height: 50px;
+            margin-left: 0;
+            /* margin-bottom: 20px; */
+        }
+
+
+        .earn_rider h4{
+            font-size: 12px;
+            margin-top: 0;
+        }
+
+
+        
+        .earn_rider{
+    
+        }
+
+       
+        
+
+        .lunch_break{
+    
+        }
+
+        .lunch_break h4{
+            margin-top: 0;
+        }
+
+
+        .gift_cards{
+
+        }
+
+        .gift_cards  h4{
+            margin-top: 0;
+        }
+
+    }
+
+
+    @media screen and (max-width: 1400px) {
+        .Eastern,
+        .Southern,
+        .Nothern,
+        .Western,
+        .Snack,
+        .Drinks {
+            width:100%;
+            padding: 10px;
+        }
+    
+        .m-1 {
+            width: 155x;
+            height: 155px;
+        }
+        .f-1{
+            font-size: 16px;
+        }
+
+        .image_six, .image_five,.image_four,.image_three,.image_two,.image_one{
+            margin-left: 6px;
+        }
+        }
+    
+        @media screen and (max-width: 1200px) {
+            .Eastern,
+            .Southern,
+            .Nothern,
+            .Western,
+            .Snack,
+            .Drinks {
+                width:100%;
+                padding: 10px;
+            }
+        
+            .m-1 {
+                width: 118px;
+                height: 119px;
+            }
+            .f-1{
+                font-size: 16px;
+            }
+
+            .image_six,.image_five,.image_four,.image_three,.image_two,.image_one{
+                margin-left: 6px;
+            }
+            
+            }
+
+        @media screen and (max-width: 992px) {
+            .m-1 {
+                width: 100px;
+                height: 100px;
+            }
+            .image_six{
+                margin-left: 6px;
+            }
+        }
+
+            
+            
+            @media screen and (max-width: 768px) {
+            .m-1 {
+                width: 60px;
+                height: 60px;
+            }
+
+
+            .image_six, .image_five,.image_four,.image_three,.image_two,.image_one{
+                margin-left: 6px;
+            }
+
+
+            }
+            
+            @media screen and (max-width: 576px) {
+            .m-1 {
+                width: 120px;
+                height: 120px;
+            }
+
+            .image_six, .image_five,.image_four,.image_three,.image_two,.image_one{
+                margin-left: 6px;
+            }
+            
+            .meal_cat {
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+            }
+            }
+
+
+
+
+
+
+
+
+
+
