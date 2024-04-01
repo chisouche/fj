@@ -12,6 +12,11 @@ FoodJets Landing Page is a responsive web application designed to showcase vario
 - Opportunities to join FoodJets as a restaurant partner, delivery rider, or to order lunch for offices
 - Footer section with links to discover more about FoodJets, legal information, and support options
 
+## Screenshots
+!(C:\Users\jenni\vscode_projects\portfolio\fj\src\screenshots\imgae_up1.jpg "Optional title")
+
+
+
 ## Technologies Used
 
 - React
@@ -51,7 +56,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 - SVG Icons sourced from [icons8](https://icons8.com)
 - Inspiration and design ideas from various food delivery services
--  Image Carousel slide Credit: CodePen Home Playlist Carousel - css only by Aybüke Ceylan Öncü (https://codepen.io/aybukeceylan/pen/RwrRPoO)
+- Image Carousel slide Credit: CodePen Home Playlist Carousel - css only by Aybüke Ceylan Öncü (https://codepen.io/aybukeceylan/pen/RwrRPoO)
 
 ## Additional Image Carousel Component
 
@@ -59,6 +64,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - Custom CSS styling for the carousel body, cards, and transitions.
 - React component `ImageSlide` to manage the image carousel with dynamic rendering.
 - Automatic cycling through slides with transition effects.
-
-### Code:
 
