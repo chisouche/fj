@@ -1,71 +1,64 @@
-# Getting Started with Create React App
+# FoodJets Landing Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About
 
-## Available Scripts
+FoodJets Landing Page is a responsive web application designed to showcase various food categories and promote the FoodJets delivery service. It provides users with an interactive experience to explore different types of meals and learn about the delivery options available.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Dynamic image carousel showcasing different food categories
+- Informative sections highlighting the benefits of using FoodJets delivery service
+- Download buttons for the FoodJets mobile app on Google Play and the App Store
+- Opportunities to join FoodJets as a restaurant partner, delivery rider, or to order lunch for offices
+- Footer section with links to discover more about FoodJets, legal information, and support options
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React
+- HTML5
+- CSS3
+- JavaScript
+- SVG Icons
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To run the project locally, follow these steps:
 
-### `npm run build`
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+3. Install dependencies by running `npm install`.
+4. Start the development server with `npm start`.
+5. Open your web browser and visit `http://localhost:3000` to view the landing page.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Once the application is running, you can navigate through the different sections of the landing page to explore various food categories, download the FoodJets mobile app, and learn more about joining FoodJets as a partner or rider.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contributing
 
-### `npm run eject`
+Contributions to the FoodJets Landing Page are welcome! If you'd like to contribute, please follow these guidelines:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Fork the repository and create a new branch for your feature or bug fix.
+- Make your changes and ensure they follow the project's coding standards.
+- Test your changes thoroughly.
+- Submit a pull request with a clear description of your changes.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Credits
 
-## Learn More
+- SVG Icons sourced from [icons8](https://icons8.com)
+- Inspiration and design ideas from various food delivery services
+-  Image Carousel slide Credit: CodePen Home Playlist Carousel - css only by Aybüke Ceylan Öncü (https://codepen.io/aybukeceylan/pen/RwrRPoO)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Additional Image Carousel Component
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Highlights:
+- Custom CSS styling for the carousel body, cards, and transitions.
+- React component `ImageSlide` to manage the image carousel with dynamic rendering.
+- Automatic cycling through slides with transition effects.
 
-### Code Splitting
+### Code:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-"# fj" 
