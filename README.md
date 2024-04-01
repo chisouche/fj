@@ -13,7 +13,7 @@ FoodJets Landing Page is a responsive web application designed to showcase vario
 - Footer section with links to discover more about FoodJets, legal information, and support options
 
 ## Screenshots
-!(C:\Users\jenni\vscode_projects\portfolio\fj\src\screenshots\imgae_up1.jpg "Optional title")
+![Landing page image carousel](src\screenshots\imgae_up1.jpg)
 
 
 
