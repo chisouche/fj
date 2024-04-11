@@ -89,7 +89,7 @@ const Header = () => {
                     
 
                             <div className='btn ' id='btn'>
-                                <button className='btn_login btn0  btn_effect' ><a href='/'>Login</a></button>
+                                <button className='btn_login btn0  btn_effect' ><a href='/Login'>Login</a></button>
                                 <button className='btn_signup btn0 btn_effect'><a href='/'>Sign up</a></button>
                             </div>
                         </div>
