@@ -1,0 +1,28 @@
+
+.auth_body{
+    background-image: url('../../assets/images/bg-auth.png');
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.auth_container{
+    background-color: #fff;
+    display: flex;
+    width: 950px;
+    
+}
+
+.top_{
+display: flex;
+justify-content: space-between;
+
+}
+
+
+
+

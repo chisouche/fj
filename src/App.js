@@ -1,8 +1,9 @@
+
+// App.js
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LandingPage from './components/landingPage';
-import './App.css';
-import AuthPage from './components/accountCreate'
+import AuthPage from './components/accountCreate';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/login" component={AuthPage} />
+          <Route path="/login" element={<AuthPage />} />
         </Routes>
       </div>
     </Router>
@@ -18,6 +19,3 @@ function App() {
 }
 
 export default App;
-
-
-

@@ -1,20 +1,28 @@
 // AuthPage.js
-import React, { useState } from 'react';
-import Login from './login.js';
-import SignUp from './signup.js';
+import React from 'react';
+import "../styles/css/accountCreate.css"
 
-function AuthPage() {
-  const [isLogin, setIsLogin] = useState(true);
 
-  const toggleForm = () => {
-    setIsLogin(!isLogin);
-  };
-
+function AuthPage() { 
   return (
-    <div>
-      {isLogin ? <Login toggleForm={toggleForm} /> : <SignUp toggleForm={toggleForm} />}
-      <button onClick={toggleForm}>{isLogin ? 'Switch to Sign Up' : 'Switch to Login'}</button>
-    </div>
+
+      <div className='auth_body'>
+          <div className='auth_container'>
+
+              {/* <div className='top_'>
+                <span>Food Jets</span>
+                <button>Register</button>
+
+              </div>
+
+              <div className='logon_'>
+
+              </div> */}
+          </div>
+        </div>
+
+
+   
   );
 }
 
