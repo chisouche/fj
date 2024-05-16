@@ -57,6 +57,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - SVG Icons sourced from [icons8](https://icons8.com)
 - Inspiration and design ideas from various food delivery services
 - Image Carousel slide Credit: CodePen Home Playlist Carousel - css only by Aybüke Ceylan Öncü (https://codepen.io/aybukeceylan/pen/RwrRPoO)
+- (./src/images/burger_.jpg) (https://www.freepik.com/free-vector/realistic-burger-illustration_133679957.htm#query=food%20animation&position=4&from_view=keyword&track=ais_user_b&uuid=fb0973f9-cda4-4633-b305-84cc6138fb29) Image by pikisuperstar  on Freepik
 
 ## Additional Image Carousel Component
 
