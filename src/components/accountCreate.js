@@ -18,7 +18,7 @@ function AuthPage() {
 
                   <div className='spacerbtw'></div>
                   <div className='Signup_div'>
-                    <button className='signUp_btn'>Register</button>
+                  < a href='/register'><button className='signUp_btn'>Register</button></a>
                   </div>
                 
 

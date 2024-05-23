@@ -1,0 +1,61 @@
+.password_container {
+    position: relative;
+}
+
+.password_criteria {
+    position: absolute;
+    top: 100%;
+    left: 200px;
+    margin-top: 10px; 
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 250px; 
+    list-style: none;
+}
+
+
+.password_criteria p {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.valid {
+    color: green;
+}
+
+.invalid {
+    color: red;
+}
+
+.password-strength {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 12px;
+    
+}
+.error_message{
+    font-size: 12px;
+}
+
+.password-strength--easy {
+    color: red;
+}
+
+.password-strength--medium {
+    color: orange;
+}
+
+.password-strength--strong {
+    color: green;
+}
+
+
+
+
+
+
+

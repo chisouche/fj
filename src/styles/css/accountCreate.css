@@ -1,5 +1,6 @@
 
 .auth_body{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,12 +44,23 @@ padding: 20px;
     height: 50px;
     cursor: pointer;
     background-color: #8a8686bd;
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: 700;
+    font-size: 16px;
     box-shadow: 0px 8px 16px rgba(248, 166, 166, 0.2);
 }
 
+.signUp_btn a{
+    color: inherit;
+    text-decoration: none;
+}
+
 .login_sections{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.signup_sections{
     display: flex;
     flex-direction: row;
 
@@ -59,11 +71,23 @@ padding: 20px;
     width: 100%;
 }
 
+.signups{
+    padding: 30px 30px 20px;
+    width: 100%;
+}
+
 .login_title{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
+.signup_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .login_account_ {
     font-family: "Roboto", sans-serif;
     font-weight: bold;
@@ -122,9 +146,7 @@ padding: 20px;
     margin-left: 8px;
 }
 
-.forms{
-    margin-top: 10px;
-}
+
 
 .inputs_forms{
     display: flex;
@@ -139,6 +161,22 @@ padding: 20px;
     border-radius: 10px;
     border-style: none;
     padding: 15px;
+
+}
+
+.signup_inputs_forms{
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+}
+
+.signup_inputs_forms input{
+    margin-top: 15px;
+    height: 60px;
+    border-radius: 10px;
+    border-style: none;
+    padding: 15px;
+    width: 100%;
 }
 
 .below_opts{
