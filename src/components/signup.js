@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import "../styles/css/accountCreate.css";
-import "../styles/css/signup.css"
+import "../styles/css/signup.css";
 import logo from '../assets/images/food_logo.jpg';
 import { validateEmail, validatePassword } from '../utils/signup_validation';
-
-
 
 const calculatePasswordStrength = (password) => {
     const criteria = [
@@ -34,7 +33,6 @@ const calculatePasswordStrength = (password) => {
     }
 };
 
-
 function Signup() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -61,7 +59,7 @@ function Signup() {
         setPasswordStrength(calculatePasswordStrength(value));
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         if (email.trim() === '' || password === '' || confirmPassword === '') {
             setSubmissionMessage('Please fill in all fields.');
@@ -81,13 +79,24 @@ function Signup() {
             setSubmissionMessage('Passwords do not match.');
             return;
         }
-        // Proceed with form submission ( API call)
-        console.log('Form submitted successfully');
-        setSubmissionMessage('Submission successful!');
-        setEmail('');
-        setPassword('');
-        setConfirmPassword('');
-        setPasswordCriteriaFailed([]);
+
+        // Proceed with form submission (API call)
+        try {
+            const response = await axios.post('http://localhost:5000/api/auth/signup', {
+                username,
+                email,
+                password
+            });
+            setSubmissionMessage('Submission successful!');
+            setEmail('');
+            setPassword('');
+            setConfirmPassword('');
+            setPasswordCriteriaFailed([]);
+            console.log('Form submitted successfully', response.data);
+        } catch (error) {
+            setSubmissionMessage('Error submitting the form');
+            console.error('There was an error!', error);
+        }
     };
 
     return (
@@ -153,7 +162,6 @@ function Signup() {
             </div>
         </div>
     );
-    
 }
 
 export default Signup;
