@@ -20,5 +20,9 @@
     "passport": "^0.7.0",
     "passport-google-oauth20": "^2.0.0"
   },
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
 }
