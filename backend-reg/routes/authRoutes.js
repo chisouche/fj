@@ -1,3 +1,4 @@
+// routes/authRoutes
 const express = require('express');
 const { registerUser } = require('../controllers/authController');
 

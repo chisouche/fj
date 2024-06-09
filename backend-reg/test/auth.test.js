@@ -27,9 +27,10 @@ describe('POST /api/auth/signup', () => {
       });
 
     expect(response.status).toBe(201);
-    expect(response.body).toHaveProperty('id');
+    expect(response.body).toHaveProperty('_id');
     expect(response.body).toHaveProperty('username', 'testuser');
     expect(response.body).toHaveProperty('email', 'test@example.com');
+    expect(response.body).toHaveProperty('token');
   });
 
   it('should return 400 if any field is missing', async () => {

@@ -1,11 +1,18 @@
 const mongoose = require('mongoose');
-const dotenv = require('dotenv');
+require('dotenv').config({
+path: `.env.${process.env.NODE_ENV || 'development'}`
+});
 
-dotenv.config();
+console.log('NODE_ENV:', process.env.NODE_ENV); // Debug: log NODE_ENV
+console.log('MONGO_URI:', process.env.MONGO_URI); // Debug: log MONGO_URI
 
 const connectDB = async () => {
     try {
-        const uri = process.env.NODE_ENV === 'test' ? process.env.MONGO_URI_TEST : process.env.MONGO_URI;
+        const uri = process.env.MONGO_URI;
+        console.log('MONGO_URI:', uri); // Debug: log the URI
+        if (!uri) {
+            throw new Error('MONGO_URI is not defined');
+        }
         await mongoose.connect(uri, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
