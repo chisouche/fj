@@ -1,18 +1,25 @@
-// utils/authService.js
-
-import axios from 'axios';
-
+// src/utils/authService.js
 const signup = async (userData) => {
   try {
-    const response = await axios.post('http://localhost:5000/api/auth/signup', userData);
-    return response.data; // Assuming your backend sends back data upon successful signup
+    const response = await fetch('http://localhost:5000/api/auth/signup', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(userData),
+    });
+
+    if (!response.ok) {
+      const errorData = await response.json();
+      throw new Error(errorData.message || 'Failed to sign up');
+    }
+
+    return await response.json();
   } catch (error) {
-    throw new Error(error.response.data.message); // Assuming your backend sends back error messages
+    console.error('Error during signup:', error);
+    throw error;
   }
 };
 
-const authService = {
-  signup,
-};
+export default signup;
 
-export default authService;

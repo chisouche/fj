@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start:dev": "npx cross-env NODE_ENV=development node server.js",
-    "start:test": "npx cross-env NODE_ENV=testing node server.js",
+    "start:test": "npx cross-env NODE_ENV=test node server.js",
     "start:prod": "npx cross-env NODE_ENV=production node server.js"
   },
   "keywords": [],

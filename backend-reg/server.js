@@ -1,8 +1,8 @@
 const express = require('express');
-const mongoose = require('mongoose');
 const cors = require('cors');
-const userRoutes = require('./routes/authRoutes');
 const path = require('path');
+const userRoutes = require('./routes/authRoutes');
+const connectDB = require('./config/db');
 
 // Determine the environment and set the corresponding .env file
 const env = process.env.NODE_ENV || 'development';
@@ -18,23 +18,18 @@ console.log('PORT:', process.env.PORT); // Log PORT
 
 const app = express();
 
+// Use body-parser middleware
+app.use(express.json());
+
+// Connect to MongoDB
+connectDB();
+
 app.use(cors({
   origin: process.env.FRONTEND_URL,
   optionsSuccessStatus: 200
 }));
 
-app.use(express.json());
-
 app.use('/api/auth', userRoutes);
-
-mongoose.connect(process.env.MONGO_URI)
-  .then(() => {
-    console.log('Connected to MongoDB');
-  })
-  .catch((err) => {
-    console.error('Error connecting to MongoDB:', err);
-  });
-
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {

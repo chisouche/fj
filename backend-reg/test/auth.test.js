@@ -1,19 +1,25 @@
-process.env.NODE_ENV = 'test';
+process.env.NODE_ENV = 'test'; // Ensure this is set to 'test' for the test environment
 const request = require('supertest');
 const app = require('../app');
+const mongoose = require('mongoose');
+const connectDB = require('../config/db');
 
 let server;
 
 beforeAll((done) => {
-  const PORT = 5001; // Use a different port for testing
-  server = app.listen(PORT, () => {
-    console.log(`Test server running on port ${PORT}`);
-    done();
+  connectDB().then(() => {
+    const PORT = 5001; // Use a different port for testing
+    server = app.listen(PORT, () => {
+      console.log(`Test server running on port ${PORT}`);
+      done();
+    });
   });
 });
 
 afterAll((done) => {
-  server.close(done);
+  server.close(() => {
+    mongoose.connection.close(done);
+  });
 });
 
 describe('POST /api/auth/signup', () => {

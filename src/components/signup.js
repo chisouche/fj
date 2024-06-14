@@ -1,7 +1,6 @@
 // src/components/Signup.js
 import React, { useState } from 'react';
-import authService from '../utils/authService'; // Import the service file
-// import axios from 'axios';
+import signup from '../utils/authService';
 import "../styles/css/accountCreate.css";
 import "../styles/css/signup.css";
 import logo from '../assets/images/food_logo.jpg';
@@ -86,7 +85,7 @@ function Signup() {
     // Proceed with form submission (API call)
     try {
       const userData = { username, email, password };
-      const response = await authService.signup(userData);
+      const response = await signup(userData);
       setSubmissionMessage('Submission successful!');
       setEmail('');
       setPassword('');
@@ -129,13 +128,13 @@ function Signup() {
               </div>
             </div>
             <div className='forms_'>
-              <form onSubmit={handleSubmit}>
+              <form id='signup_form' name='signup-form' onSubmit={handleSubmit}>
                 <div className='signup_inputs_forms'>
-                  <input type='text' placeholder='Email' value={email} onChange={handleEmailChange} />
+                  <input id='email-id' name='email-name' type='text' placeholder='Email' value={email} onChange={handleEmailChange} />
                   {emailMessage && <span className='error_message'>{emailMessage}</span>}
                   <input type='text' id='u_name' name='user_name' placeholder='Username' value={username} onChange={(e) => setUsername(e.target.value)} />
                   <div className='password_container'>
-                    <input type='password' placeholder='Password' value={password} onChange={handlePasswordChange} onFocus={() => setPasswordFocused(true)} onBlur={() => setPasswordFocused(false)} />
+                    <input id='password-id' name='pwd-name' type='password' placeholder='Password' value={password} onChange={handlePasswordChange} onFocus={() => setPasswordFocused(true)} onBlur={() => setPasswordFocused(false)} />
                     {passwordFocused && passwordCriteriaFailed.length > 0 && (
                       <div className='password_criteria'>
                         {passwordCriteriaFailed.includes('uppercase') && <p className='invalid'>At least 1 uppercase letter</p>}
@@ -151,7 +150,7 @@ function Signup() {
                       Password Strength: <span className={`password-strength--${passwordStrength}`}>{passwordStrength}</span>
                     </div>
                   )}
-                  <input type='password' placeholder='Re-enter Password' value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
+                  <input id='re-enter' name='re-enter-pwd' type='password' placeholder='Re-enter Password' value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
                   {submissionMessage && <span className='error_message'>{submissionMessage}</span>}
                 </div>
                 <div className='below_opts'>
